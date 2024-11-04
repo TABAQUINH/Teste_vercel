@@ -4,23 +4,23 @@ const router = express.Router();
 //listar as categorias - show.ejs
 router.get("/", async(req, res) => {
   res.render("base", {
-    title: "Categorias",
-    view: "categorias/show",
+    title: "Alunos",
+    view: "aluno/show"
   });
 });
 
 //add categorias -  add.ejs
-router.get("/add", (req, res) => {
+router.get("/addaluno", (req, res) => {
     res.render("base", {
-      title: "Adicionar Categorias",
-      view: "categorias/add",
+      title: "Adicionar Alunos",
+      view: "aluno/add",
     });
   });
 //editar categorias - edit.ejs
-router.get("/edit", async(req, res) => {
+router.get("/editaluno", async(req, res) => {
     res.render("base", {
-      title: "Editar Categorias",
-      view: "categorias/edit",
+      title: "Editar Alunos",
+      view: "aluno/edit",
     });
   });
   module.exports = router;
